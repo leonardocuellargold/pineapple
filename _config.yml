@@ -9,7 +9,8 @@ twitter: "https://twitter.com/"
 github: "https://github.com/"
 
 # Site config
-baseurl: "/home"
+url: "https://leonardocuellargold.github.io"
+baseurl: ""
 highlighter: rouge
 sass:
   sass_dir: assets/scss
