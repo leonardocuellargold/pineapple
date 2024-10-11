@@ -1,0 +1,149 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ site.author }} / Resume</title>
+    <meta name="author" content="{{ site.author }}">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    {% include head.html %}
+    <style>
+        body {
+            color: #333;
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .container {
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            color: #000080; /* Light blue pastel */
+        }
+
+        section {
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: #000080; /* Light blue pastel */
+            border-bottom: 2px solid #000080; /* Light blue pastel */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .container p, ul {
+            color: #666;
+        }
+
+        .skills ul li, .certifications ul li, .awards ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+{% include header.html %}
+<main class="content">
+    <div class="container">
+        <h1>{{ site.author }}</h1>
+        <p style="text-align: center;">Management Information Systems & Accounting</p>
+        <p style="text-align: center;">Expected Graduation: December 2025</p>
+    </div>
+
+    <section id="education">
+        <div class="container">
+            <h3>Education</h3>
+            <p><strong>West Virginia University</strong><br>
+                Double Major in Management Information Systems and Accounting<br>
+                <strong>Expected Graduation Date:</strong> December 2025</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h3>Experience</h3>
+
+            <h4>IBM – Application Consultant Intern</h4>
+            <p><em>June 2024 – August 2024</em></p>
+            <ul>
+                <li>Developed cloud-based solutions using Google Cloud and IBM Watson.</li>
+                <li>Collaborated on digital transformation projects for various clients.</li>
+                <li>Managed and deployed cloud applications using Google Cloud Platform.</li>
+            </ul>
+
+            <h4>Data Driven WV – Denton Fellow</h4>
+            <p><em>2024 – Present</em></p>
+            <ul>
+                <li>Led a project to analyze and visualize traffic data for optimal billboard placement.</li>
+                <li>Created automated data visualization dashboards using Qlik.</li>
+            </ul>
+
+            <h4>WesBanco – Data Analytics Intern</h4>
+            <p><em>May 2023 – August 2023</em></p>
+            <ul>
+                <li>Developed reports and dashboards for financial data analysis.</li>
+                <li>Helped integrate data visualization tools to optimize data processes.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h3>Skills</h3>
+            <ul>
+                <li><strong>Languages:</strong> Python, Java, Golang, R, JavaScript</li>
+                <li><strong>Cloud Platforms:</strong> Google Cloud, IBM Cloud</li>
+                <li><strong>Tools:</strong> PostgreSQL, Qlik, Jupyter Notebooks</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <h3>Certifications</h3>
+            <ul>
+                <li>Google Cloud Associate Engineer</li>
+                <li>IBM Data Analyst Professional Certification</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="awards">
+        <div class="container">
+            <h3>Honors & Awards</h3>
+            <ul>
+                <li>Lewis Fellowship DDWV</li>
+                <li>Cole Unger Social Action Award</li>
+                <li>Hispanic Heritage Foundation Award</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+{% include footer.html %}
+<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
+</body>
+</html>
