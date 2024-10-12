@@ -33,7 +33,7 @@ permalink: /resume/
             font-size: 2.5em;
             margin-top: 40px;
             margin-bottom: 10px;
-            color: #000080; /* Light blue pastel */
+            color: #000080;
         }
 
         section {
@@ -42,10 +42,14 @@ permalink: /resume/
         }
 
         h3 {
-            color: #000080; /* Light blue pastel */
-            border-bottom: 2px solid #000080; /* Light blue pastel */
+            color: #000080;
+            border-bottom: 2px solid #000080;
             padding-bottom: 10px;
             margin-bottom: 20px;
+        }
+
+        h4 {
+            color: #000080;
         }
 
         ul {
@@ -65,22 +69,51 @@ permalink: /resume/
             display: inline-block;
             margin-right: 15px;
         }
+
+        .projects ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .project-item {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            width: 48%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-item h4 {
+            margin-top: 0;
+        }
+
+        .project-item a {
+            color: #000080;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-item a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 {% include header.html %}
 <main class="content">
     <div class="container">
-        <p style="text-align: center;">Management Information Systems & Accounting</p>
-        <p style="text-align: center;">Expected Graduation: December 2025</p>
+        <h1>{{ site.author }}</h1>
+        <p style="text-align: center;">Sample Job Title | Sample Industry</p>
+        <p style="text-align: center;">Contact: sample.email@example.com</p>
     </div>
 
     <section id="education">
         <div class="container">
             <h3>Education</h3>
-            <p><strong>West Virginia University</strong><br>
-                Double Major in Management Information Systems and Accounting<br>
-                <strong>Expected Graduation Date:</strong> December 2025</p>
+            <p><strong>Sample University</strong><br>
+                Bachelor of Science in Computer Science<br>
+                <strong>Graduation Date:</strong> May 2024</p>
         </div>
     </section>
 
@@ -88,26 +121,20 @@ permalink: /resume/
         <div class="container">
             <h3>Experience</h3>
 
-            <h4>IBM – Application Consultant Intern</h4>
-            <p><em>June 2024 – August 2024</em></p>
+            <h4>ABC Tech – Software Developer</h4>
+            <p><em>January 2023 – Present</em></p>
             <ul>
-                <li>Developed cloud-based solutions using Google Cloud and IBM Watson.</li>
-                <li>Collaborated on digital transformation projects for various clients.</li>
-                <li>Managed and deployed cloud applications using Google Cloud Platform.</li>
+                <li>Developed a cloud-based CRM system using Python and Django.</li>
+                <li>Improved application performance by 20% through code optimization.</li>
+                <li>Collaborated with cross-functional teams to design new features.</li>
             </ul>
 
-            <h4>Data Driven WV – Denton Fellow</h4>
-            <p><em>2024 – Present</em></p>
+            <h4>XYZ Corp – IT Intern</h4>
+            <p><em>May 2022 – August 2022</em></p>
             <ul>
-                <li>Led a project to analyze and visualize traffic data for optimal billboard placement.</li>
-                <li>Created automated data visualization dashboards using Qlik.</li>
-            </ul>
-
-            <h4>WesBanco – Data Analytics Intern</h4>
-            <p><em>May 2023 – August 2023</em></p>
-            <ul>
-                <li>Developed reports and dashboards for financial data analysis.</li>
-                <li>Helped integrate data visualization tools to optimize data processes.</li>
+                <li>Assisted in the development of internal tools to automate data processing tasks.</li>
+                <li>Configured servers and managed IT support for the company's main office.</li>
+                <li>Documented and streamlined IT processes, reducing response times by 15%.</li>
             </ul>
         </div>
     </section>
@@ -116,10 +143,32 @@ permalink: /resume/
         <div class="container">
             <h3>Skills</h3>
             <ul>
-                <li><strong>Languages:</strong> Python, Java, Golang, R, JavaScript</li>
-                <li><strong>Cloud Platforms:</strong> Google Cloud, IBM Cloud</li>
-                <li><strong>Tools:</strong> PostgreSQL, Qlik, Jupyter Notebooks</li>
+                <li><strong>Languages:</strong> Python, Java, C++, JavaScript</li>
+                <li><strong>Cloud Platforms:</strong> AWS, Microsoft Azure</li>
+                <li><strong>Tools:</strong> Docker, Kubernetes, Git, Jenkins</li>
             </ul>
+        </div>
+    </section>
+
+    <section id="github-projects">
+        <div class="container">
+            <h3>GitHub Projects</h3>
+            <div class="projects">
+                <ul>
+                    <li class="project-item">
+                        <h4><a href="{{ site.baseurl }}/blog/my-first-project">My First Project</a></h4>
+                        <p>A full-stack web application built with Python and React. Read more in the project blog post.</p>
+                    </li>
+                    <li class="project-item">
+                        <h4><a href="{{ site.baseurl }}/blog/data-visualization-dashboard">Data Visualization Dashboard</a></h4>
+                        <p>A dashboard built with D3.js and Flask to visualize real-time data. More details in the blog post.</p>
+                    </li>
+                    <li class="project-item">
+                        <h4><a href="{{ site.baseurl }}/blog/machine-learning-model">Machine Learning Model</a></h4>
+                        <p>A machine learning project predicting stock prices using Python. Check out the full project blog.</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -127,8 +176,8 @@ permalink: /resume/
         <div class="container">
             <h3>Certifications</h3>
             <ul>
-                <li>Google Cloud Associate Engineer</li>
-                <li>IBM Data Analyst Professional Certification</li>
+                <li>AWS Certified Solutions Architect</li>
+                <li>Google Cloud Professional Data Engineer</li>
             </ul>
         </div>
     </section>
@@ -137,9 +186,9 @@ permalink: /resume/
         <div class="container">
             <h3>Honors & Awards</h3>
             <ul>
-                <li>Lewis Fellowship DDWV</li>
-                <li>Cole Unger Social Action Award</li>
-                <li>Hispanic Heritage Foundation Award</li>
+                <li>Dean’s List – Spring 2023</li>
+                <li>National Merit Scholarship</li>
+                <li>Hackathon Winner – CodeFest 2022</li>
             </ul>
         </div>
     </section>
